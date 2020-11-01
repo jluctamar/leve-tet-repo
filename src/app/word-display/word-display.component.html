@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <div class="display-container">
+        <div class="game-container" *ngIf="activeGame">
+            <div class="pass-container" (click)="onPassResponse()">
+
+            </div>
+            <div class="text-container" >
+                <div class="text">
+                    <div class="creole-text" [ngClass]="{ 'smallText' : isLengthy}">{{displayWord.creoleText}}</div>
+                    <div class="eng-text" [ngClass]="{ 'smallText' : isLengthy}"> {{displayWord.engText}} </div>
+                </div>
+                <app-countdown-clock (timedOutEvent)='onTimedOutEvent()'></app-countdown-clock>
+            </div>
+            <div class="correct-container" (click)="onCorrectResponse()"></div>
+        </div>
+        <div class="summary-container" *ngIf="!activeGame" style="background-image: url({{imageSrc.creoleText}})">
+            <div class="points-display"> {{ pointsCounter }} </div>
+            <ng-scrollbar class="word-summary"> 
+                <div class="word" *ngFor="let result of resultsArray">
+                    <div class="creole-text" [ngClass]="{ 'point' : result.isCorrect, 'no-point' : !result.isCorrect}"> 
+                        {{result.resultEntry.creoleText}} 
+                    </div>
+                    <div class="eng-text" [ngClass]="{ 'point' : result.isCorrect, 'no-point' : !result.isCorrect}">
+                        {{result.resultEntry.engText}}
+                    </div>
+                </div>
+            </ng-scrollbar>
+            <button mat-raised-button (click)="endOfRoundEvent.emit()" > Done </button>
+        </div>
+    </div>
+</div>

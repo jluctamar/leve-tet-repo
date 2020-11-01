@@ -1,0 +1,157 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background: transparent;
+    // position: fixed;
+    // z-index: 1;
+  
+  
+    .display-container {
+      display: flex;
+      height: 380px;
+      background: beige;
+      box-shadow: 5px 5px 0px darkgrey;
+      border: solid 1px black;
+      border-radius: 80px; 
+      border-width: thick;
+      .game-container {
+        display: flex;
+        width: 100%;
+        .pass-container {
+          background: rgb(238,0,0);
+          background: linear-gradient(90deg, rgba(238,0,0,1) 0%, rgba(253,88,57,1) 16%, rgba(255,99,64,1) 42%, rgba(245,245,220,1) 86%);      
+          height: 100%;
+          width: 30%;
+          border-radius: 75px;
+          opacity : 0;
+          &:hover {
+            transition-duration:  .4s;
+            transition-timing-function: ease-in;
+            opacity: .7;
+          }
+        }
+  
+        .text-container {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+          .text {
+            transform: translateY(55px);
+            .creole-text, .eng-text{
+              transition-duration:  1s;
+              transition-timing-function: ease-in;
+              font-size: 2.5rem;
+              font-weight: bold;
+              margin-bottom: 8px;
+              display: flex;
+              justify-content: center;
+              &.smallText {
+                font-size: 1.5rem;   
+              }
+            }
+          }
+          app-countdown-clock {
+            position: absolute;
+            transform: translate(-70px, 175px);
+          }
+        }
+  
+        .correct-container {
+          background: rgb(245,245,220);
+          background: linear-gradient(90deg, rgba(245,245,220,1) 12%, rgba(205,247,45,1) 34%, rgba(186,255,73,1) 65%, rgba(124,252,0,1) 100%);
+          height: 100%;
+          width: 30%;
+          border-radius: 75px;
+          opacity : 0;
+          &:hover {
+            transition-duration:  .4s;
+            transition-timing-function: ease-in;
+            opacity: .7;
+          }
+        }
+      }
+    }
+  
+    .summary-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 2rem;
+      border-radius: 75px;
+  
+      // background image is set in the pug file
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      .points-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        font-weight: bold;
+        font-size: 5rem;   
+        border-style: solid; 
+        border-radius: 55px;
+        margin-bottom: 16px;
+      }
+  
+  
+      ::ng-deep ng-scrollbar {
+  
+        .ng-scroll-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 200px
+        }
+  
+      }
+      .word-summary {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center !important;
+        height: 200px;
+        margin-bottom: 8px;
+        .word {
+          display: flex;
+          .eng-text {
+            margin-left: 32px;
+  
+          }
+          
+          .eng-text, .creole-text {
+            &.point {
+              font-weight: bold;
+              color:  white;
+              text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+            }
+            &.no-point {
+              color: slategray;
+              opacity: 1;
+              text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, 
+              #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+            }
+          }
+        }
+      }
+    }
+  
+  }
+  

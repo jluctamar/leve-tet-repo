@@ -1,0 +1,43 @@
+.wrapper {
+    .circle {
+      .e-c-base {
+        fill: none;
+        stroke: #b6b6b6;
+        stroke-width: 4px;
+      }
+  
+      .e-c-progress {
+        fill: none;
+        stroke: #f7958e;
+        stroke-width: 4px;
+        transition: stroke-dashoffset 0.7s;
+      }
+  
+      .e-c-pointer {
+        fill: #fff;
+        stroke: #f7958e;
+        stroke-width: 2px;
+      }
+  
+      #e-pointer {
+        transition: transform 0.7s;
+      }
+      .controls {
+        left: 75px;
+        top: 105px;
+        text-align: center;
+    
+        .display-remain-time {
+          font-family: "Roboto";
+          font-weight: 100;
+          font-size: 65px;
+          color: #f7958e;
+          font-size: 2.5rem;
+          transform: translate(64px, -260px);
+        }
+      }
+    }
+  
+  
+  }
+  

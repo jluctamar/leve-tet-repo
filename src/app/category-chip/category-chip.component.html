@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <div class="chip" (click)="toggleShowDiv('divA')"  style="background-image: url({{imageSrc}})">
+        <div class="name">
+            <div class="text-container">
+                <div class="text"> {{category.name.creoleText}}</div>
+                <div class="text"> {{category.name.engText}} </div>
+            </div>
+        </div>
+
+        <div class="chip-details" [@slideInOut]="animationState" (click)="$event.stopPropagation()"> 
+            <div class="description"> </div>
+            <div class="action-container">
+                <button mat-raised-button (click)="onSelectCategory()" > Select </button>
+                <button mat-raised-button (click)="toggleShowDiv('divA')"> Close </button>
+            </div>
+        </div>
+    </div>
+</div>

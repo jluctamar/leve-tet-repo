@@ -1,0 +1,22 @@
+<div class="wrapper" [ngClass]="{'game-display':showWordDisplay }">
+    <div class="top-banner" *ngIf="!showWordDisplay">
+        <img src="assets/under-construction.jpg" alt="Under Construction">
+    </div>
+    
+    <div class="word-display-container" *ngIf="showWordDisplay">
+        <app-word-display [wordsArray]="selectedArray" (endOfRoundEvent)="onEndOfRoundEvent()"></app-word-display>
+    </div>
+
+    <div class="category-select" *ngIf="!showWordDisplay">
+        <ng-scrollbar class="category-list">
+            <div class="grid-row">
+                <app-category-chip 
+                class="grid-item" 
+                *ngFor="let category of dataBank; index as i"
+                [category]="category"
+                (selectedCategoryEvent)="selectedCategoryEvent($event)"></app-category-chip>
+            </div>
+        </ng-scrollbar>
+
+    </div>
+</div>
