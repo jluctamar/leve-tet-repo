@@ -95,7 +95,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 450px;
         width: 100px;
         font-weight: bold;
         font-size: 5rem;   
@@ -124,6 +124,7 @@
         margin-bottom: 8px;
         .word {
           display: flex;
+          margin-top: 16px;
           .eng-text {
             margin-left: 32px;
   
