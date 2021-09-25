@@ -7,9 +7,9 @@
 
   .top-banner {
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     .header {
       color: white;
       font-size: 32px;
@@ -47,8 +47,12 @@
   
   ********************************/
   @media only screen and (max-width: 767px) and (orientation: landscape) {
-
-
+    .top-banner {
+      img {
+        width: 35%;
+        height: 6rem;
+      }
+    }
   }
 
   @media only screen and (max-width: 767px) and (orientation: portrait) {
