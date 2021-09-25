@@ -1,8 +1,9 @@
 .wrapper {
 
     .chip {
+        display: flex;
+        flex-direction: column;
         font-size: 24px;
-        width: 420px;
         max-height: 220px;
         border-radius: 32px;
         box-shadow: -15px 24px 31px -20px rgba(127, 132, 145, 1);
@@ -50,9 +51,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 420px;
       height: 120px;
-      // background: beige;
       background: transparent;
       padding-top: 16px;
 
@@ -69,5 +68,30 @@
         }
       }
     }
+  }
+  
+
+
+  /*******************************
+  
+    MOBILE VIEW STYLES
+  
+  ********************************/
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+
+    
+  }
+
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 10240px) {
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   }
 }

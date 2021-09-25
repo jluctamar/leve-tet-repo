@@ -1,7 +1,4 @@
 <div class="wrapper" [ngClass]="{'game-display':showWordDisplay }">
-    <div class="top-banner" *ngIf="!showWordDisplay">
-        <img src="assets/main-logo.png" alt="main-logo">
-    </div>
     
     <div class="word-display-container" *ngIf="showWordDisplay">
         <app-word-display [wordsArray]="selectedArray" (endOfRoundEvent)="onEndOfRoundEvent()"></app-word-display>

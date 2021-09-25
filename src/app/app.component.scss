@@ -1,61 +1,79 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
 
-  .content {
+  .top-banner {
     display: flex;
-    // margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    .header {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 8px;
+      margin-bottom: 32px;
+    }
+    img {
+      width: 25%;
+      height: 10rem;
+    }
   }
 
-
-  footer {
-    margin-top: 8px;
+  .mid-section {
     display: flex;
-    align-items: center;
-    line-height: 20px;
+    flex-direction: column;
+    width: 100%;
   }
-
-  footer a {
+  .bottom-banner {
     display: flex;
-    align-items: center;
-  }
-
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: 1;
-    width: 1920px;
-    height: 65%;
-    pointer-events: none
-  }
-
-
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-
-    .card-container > *:not(.circle-link) ,
-    .terminal {
+    width: 100%;
+    svg#clouds {
+      z-index: 1;
       width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
+      pointer-events: none;
     }
   }
 
-  @media screen and (max-width: 575px) {
+
+
+  
+  /*******************************
+  
+    MOBILE VIEW STYLES
+  
+  ********************************/
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+
 
   }
+
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    .top-banner {
+      img {
+        width: 65%;
+        height: 12rem;
+      }
+    }
+
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 10240px) {
+    
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+  
+  }
+  
+  @media only screen and  (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    
+  
+  }
+}
+
+
