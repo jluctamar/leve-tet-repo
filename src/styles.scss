@@ -1,19 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
-html {
-    height: 100%;
-    width: 100%;
-     background: url('./assets/clouds-panorama.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://assets.hongkiat.com/uploads/oversized-background-image-design/bg.jpg', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.https://assets.hongkiat.com/uploads/oversized-background-image-design/bg.jpg', sizingMethod='scale');
-  }
-  
-body { height: 100%;
-       width: 100%;
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body,
+html {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+html {
+  background: url("./assets/clouds-panorama.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://assets.hongkiat.com/uploads/oversized-background-image-design/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.https://assets.hongkiat.com/uploads/oversized-background-image-design/bg.jpg', sizingMethod='scale');
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
