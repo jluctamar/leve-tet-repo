@@ -53,8 +53,6 @@ export class CategoryListComponent implements OnInit {
   }
 
   selectedCategoryEvent(categoryName): void {
-    // event passes in the category name
-    console.log('Getting there....', categoryName);
 
     // set showWordDisplay to true
     this.showWordDisplay = true;

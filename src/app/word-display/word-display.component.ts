@@ -29,7 +29,6 @@ export class WordDisplayComponent implements OnInit {
     this.activeGame = true;
     this.loadAudioCLips();
     this.imageSrc = this.wordsArray[0];
-    console.log(this.imageSrc)
     if (this.imageSrc.creoleText.search('songs') !== -1) {
       this.isLengthy = true;
     }

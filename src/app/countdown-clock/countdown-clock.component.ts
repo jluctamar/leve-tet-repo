@@ -96,7 +96,6 @@ export class CountdownClockComponent implements OnInit {
       seconds < 10 ? '0' : ''
     }${seconds}`;
     this.displayOutput.textContent = displayString;
-    console.log('seconds', seconds);
     if (seconds === 10) {
       this.countdownClip.play();
     }
