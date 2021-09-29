@@ -1,6 +1,6 @@
 export default [
     {   "Classrooms Items" : "Atik Salklas La",
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "A collection of items that can be found in a typical classroom":"Yon koleksyon atik ki ka jwenn nan yon sal klas",
         "IMAGE": "assets/classroom-items.jpg",
         "Chair":  "Chèz",
         "Clock" :   "Revèy",
@@ -35,7 +35,7 @@ export default [
     },
     {  
         "City Buildings" : "Vil Bilding Yo" ,
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "Various kinds of buildings that can be found within cities, that are essential in most daily activites":"Dives kalite bilding ki ka jwen nan yon gran vil.",
         "IMAGE": "assets/city-buildings.jpg",
        "Bank" : "La Bank",
        "Hotel" : "ótel" ,
@@ -69,7 +69,7 @@ export default [
     },
     {
         "Jobs" : "Travay", 
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "Different types of jobs that are found in society":"Dives kalite travay ki kon jwen nan yon sosyete",
         "IMAGE": "assets/jobs.jpg",
         "Actor" :  "Aktè",
         "Cashier" : "Kesye",
@@ -105,7 +105,7 @@ export default [
     },
     {
         "The Body" :"Kò a",
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "THe different parts of the body":"diferan pati nan kò a",
         "IMAGE": "assets/the-human-body.jpg",
         "Brain"  : "Sèvo",
         "Foot"  : "Pye",
@@ -140,7 +140,7 @@ export default [
     },
     {
         "Feelings" : "Santiman"  ,
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "Some of the different types of emotions that some one can feel":"Kèk nan diferan kalite emosyon ke yon moun ka santi",
         "IMAGE": "assets/emotions.jpg",
         "Hot" : "Cho" ,
         "Cold" : "Frèt",
@@ -176,7 +176,7 @@ export default [
     },
     {
         "Animals" : "Bèt yo" ,
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "A few of the many types of animals that can be found on earth":"Yon kèk nan anpil kalite bèt ki ka jwenn sou latè",
         "IMAGE": "assets/animals.jpg",
         "Goat" : "Kabrit",
         "Dog" : "Chen",
@@ -212,7 +212,7 @@ export default [
     },
     {
        "Foods" : " Dives Kalite Manje " ,
-       "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+       "Some of the many kinds of foods that cna be found on earth. Fruits, Vegetables, and sweets.":"Kèk nan plizyè kalite manje ki ka jwenn sou latè. Fwi, legim, ak bagay dous.",
        "IMAGE": "assets/fruits-and-vegatables.jpg",
        "Grapes" : "Rezen",
        "Apples" : "Ponm" ,
@@ -246,7 +246,7 @@ export default [
     },
     {
         "The Bible" : "Bib La",
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "Some notable people and places from God's Word, The bible.":"Gen kèk moun ki remakab ak kote ki soti nan Pawòl Bondye a, Bib la.",
         "IMAGE": "assets/the-bible.jpg",
         "Jesus" : "Jezi",
         "Abraham" : "Abraram",
@@ -282,7 +282,7 @@ export default [
     {
 
         "Songs" : "Chants",
-        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
+        "Some haitian gospel songs.":"Kek Chant L'evangil",
         "IMAGE": "assets/songs.jpg",
         "Quelle assurance" : "Blessed Assurance" ,
         "Wi mwen Kwe ou Ap Reye" : "Mwen kwe ou se bondye"  ,
