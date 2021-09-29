@@ -1,0 +1,7 @@
+/*Mixins*/
+@mixin set-text-shadow($color) {
+    text-shadow: $color 0px 0px 1px, $color 0px 0px 1px, $color 0px 0px 1px,
+    $color 0px 0px 1px, $color 0px 0px 1px, $color 0px 0px 1px, $color 0px 0px 1px,
+    $color 0px 0px 1px, $color 0px 0px 1px, $color 0px 0px 1px, $color 0px 0px 1px,
+    $color 0px 0px 1px, $color 0px 0px 1px, $color 0px 0px 1px, $color 0px 0px 1px;;
+  }

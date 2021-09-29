@@ -5,6 +5,7 @@ export interface WordEntry {
 
 export interface Category {
   name: WordEntry;
+  details: WordEntry;
   dataArray: WordEntry[];
 }
 

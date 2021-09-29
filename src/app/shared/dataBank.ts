@@ -1,5 +1,6 @@
 export default [
     {   "Classrooms Items" : "Atik Salklas La",
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/classroom-items.jpg",
         "Chair":  "Chèz",
         "Clock" :   "Revèy",
@@ -34,6 +35,7 @@ export default [
     },
     {  
         "City Buildings" : "Vil Bilding Yo" ,
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/city-buildings.jpg",
        "Bank" : "La Bank",
        "Hotel" : "ótel" ,
@@ -67,6 +69,7 @@ export default [
     },
     {
         "Jobs" : "Travay", 
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/jobs.jpg",
         "Actor" :  "Aktè",
         "Cashier" : "Kesye",
@@ -102,6 +105,7 @@ export default [
     },
     {
         "The Body" :"Kò a",
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/the-human-body.jpg",
         "Brain"  : "Sèvo",
         "Foot"  : "Pye",
@@ -136,6 +140,7 @@ export default [
     },
     {
         "Feelings" : "Santiman"  ,
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/emotions.jpg",
         "Hot" : "Cho" ,
         "Cold" : "Frèt",
@@ -171,6 +176,7 @@ export default [
     },
     {
         "Animals" : "Bèt yo" ,
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/animals.jpg",
         "Goat" : "Kabrit",
         "Dog" : "Chen",
@@ -206,6 +212,7 @@ export default [
     },
     {
        "Foods" : " Dives Kalite Manje " ,
+       "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
        "IMAGE": "assets/fruits-and-vegatables.jpg",
        "Grapes" : "Rezen",
        "Apples" : "Ponm" ,
@@ -239,6 +246,7 @@ export default [
     },
     {
         "The Bible" : "Bib La",
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/the-bible.jpg",
         "Jesus" : "Jezi",
         "Abraham" : "Abraram",
@@ -274,6 +282,7 @@ export default [
     {
 
         "Songs" : "Chants",
+        "ENGLISH:  Lorem ipsum dolor sit amet":"CREOLE:  Lorem ipsum dolor sit amet",
         "IMAGE": "assets/songs.jpg",
         "Quelle assurance" : "Blessed Assurance" ,
         "Wi mwen Kwe ou Ap Reye" : "Mwen kwe ou se bondye"  ,

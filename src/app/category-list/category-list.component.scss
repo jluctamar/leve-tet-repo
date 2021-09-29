@@ -20,6 +20,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        padding-bottom: 64px;
         .grid-item {
           height: 250px;
           flex-basis: 30%;

@@ -9,6 +9,8 @@ import { CategoryChipComponent } from './category-chip/category-chip.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgScrollbarModule } from 'ngx-scrollbar';
+import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { NgScrollbarModule } from 'ngx-scrollbar';
     WordDisplayComponent,
     CountdownClockComponent,
     CategoryChipComponent,
-    CategoryListComponent
+    CategoryListComponent,
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

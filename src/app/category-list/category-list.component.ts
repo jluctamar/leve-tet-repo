@@ -26,6 +26,10 @@ export class CategoryListComponent implements OnInit {
           creoleText: '',
           engText: '',
         },
+        details: {
+          creoleText: '',
+          engText: '',
+        },
         dataArray: [],
       };
 
@@ -41,7 +45,9 @@ export class CategoryListComponent implements OnInit {
       });
 
       tempCategory.name = tempCategory.dataArray[0]; // this first element is the caterory name
+      tempCategory.details = tempCategory.dataArray[1]; // this second element is the caterory details
       tempCategory.dataArray.shift(); // once the name has been isolated and properly assigned, remove it from the data array
+      tempCategory.dataArray.shift(); // once the details has been isolated and properly assigned, remove it from the data array
       this.dataBank.push(tempCategory);
     });
   }

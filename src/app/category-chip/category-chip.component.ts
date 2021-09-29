@@ -17,6 +17,7 @@ export class CategoryChipComponent implements OnInit {
   categoryCopy: Category;
   animationState = 'out';
   imageSrc: string;
+  showCreoleDesc = true;
   constructor() {}
 
   ngOnInit() {
@@ -38,5 +39,9 @@ export class CategoryChipComponent implements OnInit {
   onSelectCategory(): void {
     event.stopPropagation();
     this.selectedCategoryEvent.emit(this.categoryCopy.name);
+  }
+
+  ontoggleDesc(): void {
+    this.showCreoleDesc = !this.showCreoleDesc;
   }
 }

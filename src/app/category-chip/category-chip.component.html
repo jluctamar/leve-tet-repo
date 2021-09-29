@@ -8,9 +8,12 @@
         </div>
 
         <div class="chip-details" [@slideInOut]="animationState" (click)="$event.stopPropagation()"> 
-            <div class="description"> </div>
+            <div class="description"> {{ showCreoleDesc ? category.details.creoleText : category.details.engText }} </div>
             <div class="action-container">
                 <button mat-raised-button (click)="onSelectCategory()" > Select </button>
+                <button mat-mini-fab (click)="ontoggleDesc()">
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
                 <button mat-raised-button (click)="toggleShowDiv('divA')"> Close </button>
             </div>
         </div>
