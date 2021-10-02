@@ -14,7 +14,10 @@
             <div class="correct-container" (click)="onCorrectResponse()"></div>
         </div>
         <div class="summary-container" *ngIf="!activeGame" style="background-image: url({{imageSrc.creoleText}})">
-            <div class="points-display"> {{ pointsCounter }} </div>
+            <div class="points-display">
+                <div class="points">{{ pointsCounter }}</div>
+             </div>
+
             <ng-scrollbar class="word-summary"> 
                 <div class="word" *ngFor="let result of resultsArray">
                     <div class="creole-text" [ngClass]="{ 'point' : result.isCorrect, 'no-point' : !result.isCorrect}"> 

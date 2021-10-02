@@ -20,7 +20,7 @@ export class CountdownClockComponent implements OnInit {
   length = Math.PI * 2 * 100;
 
   displayOutput = null;
-  wholeTime = 60; // for 60 seconds
+  wholeTime = 600; // for 60 seconds
   timeLeft;
   intervalTimer;
   isStarted = false;

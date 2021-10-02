@@ -7,6 +7,10 @@
     align-items: center;
   }
 
+  .word-display-container {
+    height: 100%;
+    width: 100%;
+  }
   .category-select {
     display: flex;
     flex-direction: column;
@@ -34,7 +38,7 @@
 
   .word-display-container {
     z-index: 2; // to superimpose atop the clouds svg
-    width: 75%;
+    width: 100%;
   }
 
   /*******************************
@@ -70,19 +74,30 @@
 }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    // .category-select {
+    //   .category-list {
+    //     .grid-row {
+    //       .grid-item {
+    //         flex-basis: 75%;
+    //         width: 100%;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .category-select {
       .category-list {
         .grid-row {
           .grid-item {
-            flex-basis: 75%;
+            flex-basis: 100%;
             width: 100%;
           }
         }
       }
-    }
-  }
+    } 
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {

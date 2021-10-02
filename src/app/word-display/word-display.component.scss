@@ -12,7 +12,7 @@
   
     .display-container {
       display: flex;
-      height: 380px;
+      height: 100%;
       background: beige;
       box-shadow: 5px 5px 0px darkgrey;
       border: solid 1px black;
@@ -21,17 +21,18 @@
       .game-container {
         display: flex;
         width: 100%;
+        height: 100%;
         .pass-container {
           background: rgb(238,0,0);
           background: linear-gradient(90deg, rgba(238,0,0,1) 0%, rgba(253,88,57,1) 16%, rgba(255,99,64,1) 42%, rgba(245,245,220,1) 86%);      
           height: 100%;
           width: 30%;
           border-radius: 75px;
-          opacity : 0;
+          opacity : .4;
           &:hover {
             transition-duration:  .4s;
             transition-timing-function: ease-in;
-            opacity: .7;
+            opacity: .9;
           }
         }
   
@@ -69,11 +70,11 @@
           height: 100%;
           width: 30%;
           border-radius: 75px;
-          opacity : 0;
+          opacity : .4;
           &:hover {
             transition-duration:  .4s;
             transition-timing-function: ease-in;
-            opacity: .7;
+            opacity: .9;
           }
         }
       }
@@ -93,11 +94,14 @@
       background-repeat: no-repeat;
       background-size: cover;
   
+      button {
+        font-size: 1.5rem;
+      }
       .points-display {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 450px;
+        height: 100px;
         width: 100px;
         font-weight: bold;
         font-size: 5rem;   
@@ -113,7 +117,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          min-height: 200px
+          height: 200px
         }
   
       }
@@ -156,6 +160,105 @@
           transition: 350ms ease-out;
         }
     }
+  }
+
+
+   /*******************************
+  
+    MOBILE VIEW STYLES
+  
+  ********************************/
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+    .display-container {
+      .game-container {
+        
+        .pass-container, .correct-container {
+          height: 45%;
+          width: 30%;
+          border-radius: 50px;
+          opacity: 1;
+        }
+        .pass-container {
+          transform: rotate(90deg);
+        }
+        
+        .correct-container {
+          transform: rotate(-90deg);
+        }
+        .text-container {          
+          .text {
+            transform: translateY(0px);
+            padding-top: 8px;
+            .creole-text, .eng-text {
+                font-size: 1.5rem;
+                &.smallText {
+                font-size: .75rem;   
+              }
+            }
+          }
+
+          ::ng-deep app-countdown-clock {
+            position: inherit !important;
+            transform: translateX(-62px) !important;
+          }
+        }
+      }
+
+      .summary-container {
+        font-size: 1.5rem;
+        .points-display {
+          .points {
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+    
+
+    
+  }
+
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .display-container {
+      .game-container {
+        .text-container {          
+          .text {
+            transform: translateY(0px);
+            padding-top: 8px;
+            .creole-text, .eng-text {
+                font-size: 1.5rem;
+                &.smallText {
+                font-size: .75rem;   
+              }
+            }
+          }
+
+          ::ng-deep app-countdown-clock {
+            position: inherit !important;
+            transform: translateX(-62px) !important;
+          }
+        }
+      }
+
+      .summary-container {
+        font-size: 1.5rem;
+        .points-display {
+          .points {
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   }
 }
   

@@ -29,6 +29,7 @@ export class WordDisplayComponent implements OnInit {
     this.activeGame = true;
     this.loadAudioCLips();
     this.imageSrc = this.wordsArray[0];
+    // The songs category has longer titles, this identifies and sets a boolean to alert text size alteration
     if (this.imageSrc.creoleText.search('songs') !== -1) {
       this.isLengthy = true;
     }
