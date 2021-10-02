@@ -228,6 +228,8 @@
         }
         .text-container {          
           .text {
+            transform: translateY(0px);
+            padding-top: 8px;
             .creole-text, .eng-text {
                 font-size: 1.5rem;
                 &.smallText {
@@ -238,7 +240,7 @@
 
           ::ng-deep app-countdown-clock {
             position: inherit !important;
-            transform: translate(-62px, 85px) !important;
+            transform: translate(-65px, 85px) !important;
           }
         }
       }
