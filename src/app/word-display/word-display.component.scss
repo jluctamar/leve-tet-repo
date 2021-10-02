@@ -223,6 +223,9 @@
     .display-container {
       .game-container {
       
+        .pass-container {
+          z-index: 1; // resolves clock overlap issue 
+        }
         .text-container {          
           .text {
             .creole-text, .eng-text {
