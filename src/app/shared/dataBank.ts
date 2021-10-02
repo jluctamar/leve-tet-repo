@@ -105,7 +105,7 @@ export default [
     },
     {
         "The Body" :"Kò a",
-        "THe different parts of the body":"diferan pati nan kò a",
+        "THe different parts of the body":"Diferan pati nan kò a",
         "IMAGE": "assets/the-human-body.jpg",
         "Brain"  : "Sèvo",
         "Foot"  : "Pye",
@@ -212,7 +212,7 @@ export default [
     },
     {
        "Foods" : " Dives Kalite Manje " ,
-       "Some of the many kinds of foods that cna be found on earth. Fruits, Vegetables, and sweets.":"Kèk nan plizyè kalite manje ki ka jwenn sou latè. Fwi, legim, ak bagay dous.",
+       "Some of the many kinds of foods that can be found on earth. Fruits, Vegetables, and sweets.":"Kèk nan plizyè kalite manje ki ka jwenn sou latè. Fwi, legim, ak bagay dous.",
        "IMAGE": "assets/fruits-and-vegatables.jpg",
        "Grapes" : "Rezen",
        "Apples" : "Ponm" ,
