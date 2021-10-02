@@ -45,6 +45,7 @@
           .text {
             transform: translateY(55px);
             line-height: 32px;
+            text-align: center;
             .creole-text, .eng-text{
               transition-duration:  1s;
               transition-timing-function: ease-in;
@@ -219,10 +220,29 @@
   }
 
   @media only screen and (max-width: 767px) and (orientation: portrait) {
-
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .display-container {
+      .game-container {
+      
+        .text-container {          
+          .text {
+            .creole-text, .eng-text {
+                font-size: 1.5rem;
+                &.smallText {
+                font-size: .75rem;   
+              }
+            }
+          }
+        }
+      }
+      .summary-container {
+        font-size: 1.5rem;
+        .points-display {
+          .points {
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
