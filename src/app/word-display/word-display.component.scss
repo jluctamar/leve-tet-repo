@@ -232,6 +232,11 @@
               }
             }
           }
+
+          ::ng-deep app-countdown-clock {
+            position: inherit !important;
+            transform: translate(-62px, 85px) !important;
+          }
         }
       }
       .summary-container {
